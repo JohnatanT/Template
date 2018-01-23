@@ -1,4 +1,6 @@
 @import '_color';
+@import '_header';
+
 .info{
     background-color: $azul;
     padding-top: 50px;
@@ -30,4 +32,37 @@
             margin: 0 auto;
         }
     }      
+}
+
+.desc{
+    background-color: $preto;
+    color: #fff;
+    .main-text{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        h2{
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .around{
+        text-align: center;
+        .block{
+            i{
+                @include trans(.2s,linear);
+                font-size: 70px;
+                &:hover{
+                   color: $azul;
+                }
+            }
+        }
+    }
+
+
 }
