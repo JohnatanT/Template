@@ -1,0 +1,34 @@
+@import '_color';
+/* Transação */
+@mixin trans($time,$transition){
+   transition: $time $transition; 
+}
+
+
+.navbar-default{
+    background-color: $preto;
+    border: none;
+    .navbar-collapse{
+        li{
+            .dropdown-menu{
+                background-color: $preto;
+                li a:hover{
+                    background-color: transparent;
+                }
+            }
+            a{
+                @include trans(.2s,linear);
+                color: #fff;
+                &:hover{                
+                color: $azul;   
+                }
+            }
+          
+        }
+    }
+}
+
+.navbar{
+    border-radius: 0%;
+    margin-bottom: 0px;
+}
