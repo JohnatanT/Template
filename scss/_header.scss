@@ -1,4 +1,5 @@
 @import '_color';
+
 /* Transação */
 @mixin trans($time,$transition){
    transition: $time $transition; 
@@ -19,6 +20,7 @@
             a{
                 @include trans(.2s,linear);
                 color: #fff;
+                text-transform: uppercase;
                 &:hover{                
                 color: $azul;   
                 }
@@ -32,3 +34,13 @@
     border-radius: 0%;
     margin-bottom: 0px;
 }
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: transparent;
+}
+
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+    }
+}
+

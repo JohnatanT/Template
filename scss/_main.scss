@@ -18,3 +18,16 @@
         }
     }
 }
+
+@media(max-width: 991px){
+    .info{
+        .textos{
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img{
+            margin: 0 auto;
+        }
+    }      
+}
